@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  background-color: #000535;
+}
+h1 {
+  color: aliceblue;
+  /* background-color: black; */
+  margin: 1rem auto 0;
+  padding: 2rem 0 0;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+}
+form {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+.formtitle {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(110, 12, 12);
+  margin-bottom: 1rem;
+}
+input {
+  width: 75%;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 0.5px solid #00020f;
+  border-radius: 3px;
+}
+.input-error {
+  outline-color: red;
+}
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+  transform: scale(1.05);
+  transition: ease-in 0.5s;
+}
+input:focus {
+  outline: 2px solid #00020f;
+}
+.name,
+.email,
+.phone,
+.dob {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.submitbtn {
+  margin-top: 15px;
+  width: 35%;
+  padding: 12px 5px;
+  background: #00020f;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.submitbtn:hover {
+  background-color: aliceblue;
+  color: #00020f;
+  border: 0.5px solid black;
+}
+
+/* OUTPUT STYLES */
+.output {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(243, 239, 235);
+}
+h3 {
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: underline;
+  color: azure;
+}
+.cont-div {
+  padding: 5px 10px;
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.cont-div p {
+  color: aliceblue;
+  font-weight: bold;
+}
+.del-cont {
+  padding: 5px 8px;
+  margin: 10px 0 5px;
+  border: none;
+  font-weight: bold;
+  background-color: red;
+  cursor: pointer;
+}
+.memdiv {
+  margin: 2rem 10px;
+  background-color: #000535;
+  padding: 15px;
+  width: 23%;
+  font-size: 1rem;
+}
+
+/** MEDIA QUERY || RESPONSIVENESS **/
+@media screen and (max-width: 780px) {
+  form {
+    width: 80%;
+    padding: 1rem;
+  }
+  input {
+    width: 95%;
+  }
+  .memdiv {
+    margin: 1rem 0 5px;
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  input {
+    width: 95%;
+  }
+}

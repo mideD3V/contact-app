@@ -1,0 +1,19 @@
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "description": "add new contacts to your app",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run test && parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mideD3V/contact-app.git"
+  },
+  "author": "Ayomide Oke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mideD3V/contact-app/issues"
+  },
+  "homepage": "https://github.com/mideD3V/contact-app#readme"
+}

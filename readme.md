@@ -14,5 +14,5 @@ This app can be used to accept new contact details and stored on the page
 
 
 - Mobile
-![](./Screenshot%202.png)
+![](/Screenshot%202.jpg)
 
